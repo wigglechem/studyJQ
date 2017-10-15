@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+         $(function(){
+
+             //$('div').filter(".box").css("background","red");
+
+             $('div').not('.box').css("background",'red');
+         });
+    </script>
+</head>
+<body>
+<div class="box">
+div1
+</div>
+<div>
+    div2
+</div>
+</body>
+</html>
