@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+*{
+    padding:0px;
+    margin:0px;
+}
+#div1{
+    height:400px;
+    width:400px;
+    background:red;
+    margin:30px;
+
+
+}
+#div2{
+    height:300px;
+    width:300px;
+    background:yellow;
+    margin:20px;
+
+}
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+         $(function(){
+            //alert($('#div2').offset().left);//获取到屏幕的左距离
+            alert($('#div2').position().left);//到有定位的父级距离
+
+
+
+         });
+
+
+    </script>
+</head>
+<body>
+<div id="div1">
+    <div id="div2">
+
+    </div>
+
+</div>
+</body>
+</html>
