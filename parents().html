@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+
+
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+         $(function(){
+            $('#div2').parents().css("background","red");//parents就是获取当前元素的所有祖先节点，参数就是筛选功能
+         });
+
+    </script>
+</head>
+<body>
+<div id="div1">
+aaa
+    <div id="div2">
+        bbb
+    </div>
+</div>
+</body>
+</html>

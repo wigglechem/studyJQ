@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+
+
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+         $(function(){
+            $('div').click(function(){
+                alert(123);
+            })
+            var oDiv = $('div').detach();
+            $('body').append(oDiv);
+            //$('div').remove();//remove会删除事件前面操作全没有;
+         });
+
+
+    </script>
+</head>
+<body>
+<div>div<span>span</span></div>
+</body>
+</html>

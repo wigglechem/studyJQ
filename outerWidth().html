@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        #div1{
+            height:100px;
+            width:100px;
+            background:red;
+            padding:20px;
+            border:20px solid black;
+            margin:20px;
+            display:none;
+        }
+
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+         $(function(){
+            //alert($('#div1').get(0).offsetWidth);
+            alert($('#div1').outerWidth(true));
+         });
+
+
+    </script>
+</head>
+<body>
+<div id="div1">
+    div
+</div>
+
+</body>
+</html>

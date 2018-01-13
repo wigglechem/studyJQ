@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+
+
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+         $(function(){
+            //document.getElementById('div1').innerHTML;
+            //$('#div1').html();
+            //get()方法来让JQ和JS原生混用 注意是集合形式 要加参数
+            //alert($('#div1').get(0).innerHTML);
+            for(var i=0;i<$('li').get().length;i++){
+                $('li').get(i).style.background='red';
+            }
+         });
+
+
+    </script>
+</head>
+<body>
+<div id="div1">
+helloworld
+</div>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+</body>
+</html>
