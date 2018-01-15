@@ -11,19 +11,22 @@
 
     </script>
     <script type="text/javascript">
-
+//proxy():改变this指向的
          $(function(){
-            //$('div').appendTo($('span'));
-            $('div').click(function(){
-                alert(123);
-            })
-            $('div').clone(true).appendTo($('span'));//可以接受一个参数，作用可以复制之前的操作行为 加一个True就可以
+            function show(n1,n2){
+                alert(n1);
+                alert(n2);
+                alert(this);
+            }
+           // $.proxy(show,document)(3,4);
+           $(document).click($.proxy(show,window,3,4))
          });
 
     </script>
 </head>
 <body>
-<div>div</div>
-<span>span</span>
+
+
+</div>
 </body>
 </html>

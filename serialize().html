@@ -11,19 +11,20 @@
 
     </script>
     <script type="text/javascript">
-
+//
          $(function(){
-            //$('div').appendTo($('span'));
-            $('div').click(function(){
-                alert(123);
-            })
-            $('div').clone(true).appendTo($('span'));//可以接受一个参数，作用可以复制之前的操作行为 加一个True就可以
+            console.log($('form').serialize())//形成字符串 到后台
+            console.log($('form').serializeArray())
          });
 
     </script>
 </head>
 <body>
-<div>div</div>
-<span>span</span>
+<form action="" method="get" accept-charset="utf-8">
+    <input type="text" name="a" value="1">
+    <input type="text" name="b" value="2">
+    <input type="text" name="c" value="3">
+
+</form>
 </body>
 </html>

@@ -11,13 +11,9 @@
 
     </script>
     <script type="text/javascript">
-
+//
          $(function(){
-            //$('div').appendTo($('span'));
-            $('div').click(function(){
-                alert(123);
-            })
-            $('div').clone(true).appendTo($('span'));//可以接受一个参数，作用可以复制之前的操作行为 加一个True就可以
+           $('li').slice(1,4).css("background","red");//选择一个范围
          });
 
     </script>
@@ -25,5 +21,12 @@
 <body>
 <div>div</div>
 <span>span</span>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+#div1{
+    height:100px;
+    width:100px;
+    background:red;
+
+}
+#div2{
+    height:100px;
+    width:100px;
+    background:red;
+    margin-top:30px;
+}
+
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+//
+         $(function(){
+            $('#div1').on('show',function(){
+                alert(123);
+            })
+            $('#div1').on('show',function(){
+                alert(456);
+
+            })
+            $('#div1').trigger('show');
+            //$('#div1').trigger('click');//主动触发
+         });
+
+    </script>
+</head>
+<body>
+<div id="div1">
+aaa
+
+</div>
+</body>
+</html>

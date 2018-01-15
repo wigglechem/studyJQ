@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+
+
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+//
+$.ajax({
+    url: 'xxx.php',
+    type: 'POST',
+    data: 'name=hello&age=20',
+    success:function(data){
+        alert(1);
+    },
+    error:function(){
+        alert(2);
+    }
+
+})
+$.get('xxx.php',function(){
+
+});
+$.getJSON('xxx.php?callback=show',function(data){
+    data
+})
+show({});
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

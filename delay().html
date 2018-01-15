@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+#div1{
+    height:100px;
+    width:100px;
+    background:red;
+
+}
+#div2{
+    height:100px;
+    width:100px;
+    background:red;
+    margin-top:30px;
+}
+
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+//animate():第一个参数：｛｝运动的值和属性
+//第二个参数 是时间 调节快慢
+//第三个参数 运动形式 只有两种运动形式 （swing（慢快慢）linear（匀速））
+//第四个参数 ，回调
+         $(function(){
+            $('#div1').click(function(){
+                $(this).animate({width:300},2000).delay(1000).animate({height:300},2000);
+            });
+            $('#div2').click(function(){
+                //$('#div1').stop(true);//默认只会阻止当前运动 true参数阻止后续所有运动
+                //$('#div1').stop(true,true)//可以立即停止到指定的目标点
+                $('#div1').finish();//可以立即停止到所有指定目标点;
+            })
+         });
+
+    </script>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+</body>
+</html>
